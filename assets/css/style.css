@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Gorditas:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Ole&family=Oswald:wght@200..700&family=Unkempt:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Gorditas:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Ole&family=Oswald:wght@200..700&family=Unkempt:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +17,8 @@
     --text-color: #6b1414;
     --accent-color:#FF5555 ;
     --highlight-color: #C1E59F;
+    --content-font: Unkempt, sans-serif;
+    --highlight-font: Knewave, sans-serif;
 }
 
    /* Body styles */
@@ -34,4 +40,11 @@ main {
     background-color: var(--primary-color);
     color: var(--text-color);
 }
- 
+
+h1 {
+    font-family: var(--highlight-font);
+}
+
+p {
+    font-family: var(--content-font);
+}
