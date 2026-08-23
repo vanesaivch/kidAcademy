@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+
+
+:root {
+    --primary-color: #A3D78A;
+    --secondary-color:#FF937E;
+    --text-color: #6b1414;
+    --accent-color:#FF5555 ;
+    --highlight-color: #C1E59F;
+}
+
+   /* Body styles */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    background-color: var(--highlight-color);
+    flex: 1;
+    margin: 0;
+}
+
+    /* Custom styles for the navbar */
+
+.custom-navbar {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+ 
