@@ -48,3 +48,50 @@ h1 {
 p {
     font-family: var(--content-font);
 }
+
+/*Home page styles*/
+
+.welcome-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+#welcome-message {
+    position: relative;
+    font-size: 120%;
+    padding: 1.5rem;
+    margin: 1rem;
+    background-color: transparent;
+    z-index: 1;
+    color: --var(--text-color);
+    
+}
+
+#welcome-message::before {
+    background-color: var(--accent-color);
+    height: 110%;
+    width: 80%;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(15deg);
+    aspect-ratio: 1 / 1;
+    z-index: -1;
+}
+
+/*Media queries*/
+
+@media (max-width: 768px) {
+    .welcome-section {
+        flex-direction: column;
+    }
+    #welcome-message {
+        font-size: 100%;
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+}
