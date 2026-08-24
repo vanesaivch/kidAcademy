@@ -59,6 +59,20 @@ p {
     text-align: center;
     padding: 2rem;
     position: relative;
+   
+}
+
+.welcome-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/card-back.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    transform: scale(1.05);
+    
 }
 #welcome-message {
     position: relative;
@@ -99,6 +113,7 @@ dotlottie-wc {
 @media (max-width: 768px) {
     .welcome-section {
         flex-direction: column;
+        height: 400px;
     }
     #welcome-message {
         font-size: 100%;
