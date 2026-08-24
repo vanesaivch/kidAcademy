@@ -41,6 +41,13 @@ main {
     color: var(--text-color);
 }
 
+#logo {
+    width: 100px;
+    height: auto;
+}
+
+
+/*Home page styles*/
 h1 {
     font-family: var(--highlight-font);
 }
@@ -48,9 +55,6 @@ h1 {
 p {
     font-family: var(--content-font);
 }
-
-/*Home page styles*/
-
 .welcome-section {
     display: flex;
     flex-direction: row;
