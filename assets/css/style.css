@@ -48,12 +48,14 @@ main {
 
 
 /*Home page styles*/
-h1 {
+h1, h2 {
     font-family: var(--highlight-font);
+    color: var(--text-color);
 }
 
 p {
     font-family: var(--content-font);
+    color: var(--text-color);
 }
 .welcome-section {
     display: flex;
@@ -101,7 +103,20 @@ p {
     aspect-ratio: 1 / 1;
     z-index: -1;
 }
-
+ /* How to Play and Parent Info styles */
+ #how-to-play p:last-child {
+    margin-bottom: 0;
+}
+ #how-to-play {
+    background: linear-gradient(to bottom, var(--highlight-color), var(--secondary-color));
+    margin-top: 2rem;
+ }
+ #parent-info {
+    background: linear-gradient(to bottom, var(--secondary-color), var(--highlight-color));
+ }
+    h2 {
+    text-align: center;
+ }
 dotlottie-wc {
     position: absolute;
     top: 50%;
