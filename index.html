@@ -20,6 +20,10 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <!-- AOS animation -->
+     <link
+  href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+  rel="stylesheet">
     <!-- CSS style sheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -67,17 +71,17 @@
       </section>
       <section id="how-to-play">
         <h2><strong>How to play</strong></h2>
-        <div id="intructions">
-        <p class="background"><strong>Flip a card</strong> – Choose two cards and turn them over.</p>
-        <p class="background">If they match, you keep them! If not, turn them back over.</p>
-        <p class="background">Keep going until you've matched all the cards!</p>
-        <p class="background"> <strong>Remember!</strong> – Pay attention to where each card is.</p>
+        <div id="instructions" >
+        <p data-aos="zoom-in-left"><strong>Flip a card</strong> – Choose two cards and turn them over.</p>
+        <p data-aos="zoom-in-right">If they match, you keep them! If not, turn them back over.</p>
+        <p data-aos="zoom-in-left">Keep going until you've matched all the cards!</p>
+        <p data-aos="zoom-in-right"> <strong>Remember!</strong> – Pay attention to where each card is.</p>
       </div>
       </section>
       <section id="parent-info">
-        <h2><strong>A Note for Parents 💛</strong></h2>
-        <p>Dear Parents,</p>
-        <p>
+        <h2 data-aos="flip-up"><strong>A Note for Parents 💛</strong></h2>
+        <p data-aos="flip-up">Dear Parents,</p>
+        <p data-aos="flip-up">
           Play is one of the most natural and meaningful ways children learn.
           Every game they play offers an opportunity to discover, practise new
           skills, and build confidence. Our Matching Card Game is designed to
@@ -104,5 +108,11 @@
     ></script>
     <!-- JS script -->
     <script src="assets/js/script.js"></script>
+    <!-- AOS animation -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
   </body>
 </html>
