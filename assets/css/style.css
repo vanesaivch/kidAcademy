@@ -166,6 +166,13 @@ dotlottie-wc {
     z-index: -1;
 
 }
+#penguin {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    right: 65%;
+    top: 3%;
+}
 /*Media queries*/
 
 @media (max-width: 768px) {
@@ -184,5 +191,10 @@ dotlottie-wc {
   height: auto;
   left: 5%;
   top: 70%; 
+}
+#penguin {
+    width: 30%;
+    right: 65%;
+    
 }
 }
