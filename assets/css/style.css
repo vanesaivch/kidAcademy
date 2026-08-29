@@ -46,6 +46,19 @@ main {
     height: auto;
 }
 
+    /* Footer styles*/
+    footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#links {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
 
 /*Home page styles*/
 h1, h2 {
