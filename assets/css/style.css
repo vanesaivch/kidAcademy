@@ -186,6 +186,41 @@ dotlottie-wc {
     right: 65%;
     top: 3%;
 }
+/* Game container styles */
+#game-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+.card-container {
+    flex: 0 1 calc(25% - 0.5rem);
+    
+
+}
+
+.outter-card {
+    width: 180px;
+    height: 230px;
+    overflow: hidden;
+}
+
+.inner-card {
+width: 180px;
+height: 230px;
+overflow:hidden;
+background-color: #FF5555;
+}
+
+.card {
+object-fit: cover;
+object-position: center;
+ width: 100%;
+  height: 100%;
+}
+
 /*Media queries*/
 
 @media (max-width: 768px) {
