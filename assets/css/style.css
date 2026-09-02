@@ -270,6 +270,9 @@ perspective: 1000px;
     right: 65%;
     
 }
+/* Cards media query */
+.card-container {
+    flex: 0 1 calc(50% - 0.5rem);}
 }
 @media (min-width: 1024px) {
  #game-container {
