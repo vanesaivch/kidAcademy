@@ -233,9 +233,7 @@ perspective: 1000px;
     height: 230px;
 }
 
-.card-container:hover {
-    transform: rotateY(180deg);
-}
+
 .inner-card, .outter-card {
     backface-visibility: hidden;
     position: absolute;
@@ -245,7 +243,11 @@ perspective: 1000px;
     
 }
 
-.outter-card {
+.inner-card {
+    transform: rotateY(180deg);
+}
+
+.card-container.flipped {
     transform: rotateY(180deg);
 }
 

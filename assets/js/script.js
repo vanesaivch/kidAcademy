@@ -1,10 +1,14 @@
-let cards = document.querySelectorAll('.card');
+const cardContainers = Array.from(document.querySelectorAll('.card-container'));
 
-function shuffleCards() {}
+cardContainers.forEach((cardContainer) => {
+    cardContainer.addEventListener('click', flipCard);
+});
 
-function flipCard() {}
+function flipCard(event) {
+    event.currentTarget.classList.toggle('flipped');
+}
 
-function checkForMatch() {}
+function checkForMatch(cardContainer) {}
 
 function resetCards() {}
 
