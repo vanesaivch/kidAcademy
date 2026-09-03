@@ -15,7 +15,7 @@ function checkForMatch(cardContainer) {
     if ( firstCard.alt === secondCard.alt ) {
     
 }
-
+}
 function resetCards() {}
 
 function resetGame() {}
