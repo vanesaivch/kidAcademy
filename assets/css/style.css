@@ -251,6 +251,7 @@ perspective: 1000px;
     transform: rotateY(180deg);
 }
 
+
 /*Media queries*/
 
 @media (max-width: 768px) {
