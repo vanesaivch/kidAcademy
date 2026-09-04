@@ -10,8 +10,8 @@ function flipCard(event) {
 }
 
 function checkForMatch(cardContainer) {
-    let firstCard = document.querySelector('img');
-    let secondCard = document.querySelector('img');
+    let firstCard = document.querySelector('.inner-card img');
+    let secondCard = document.querySelector('.inner-card img');
 
     if ( firstCard.alt === secondCard.alt ) {
         firstCard.classList.add('matched');
