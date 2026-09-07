@@ -13,7 +13,7 @@ function checkForMatch(cardContainer) {
     let firstCard = document.querySelector('.inner-card img');
     let secondCard = document.querySelector('.inner-card img');
 
-    if ( firstCard.alt === secondCard.alt ) {
+    if ( firstCard.dataset.type === secondCard.dataset.type ) {
         firstCard.classList.add('matched');
         secondCard.classList.add('matched');
     
