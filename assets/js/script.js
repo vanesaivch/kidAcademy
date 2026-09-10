@@ -4,8 +4,7 @@ let firstCard = null;
 let secondCard = null;
 let lockBoard = false;
 
-let navBarButton = document.getElementsByClassName('game');
-let button = document.getElementById('reset-button');
+const button = document.getElementById('reset-button');
 
 cardContainer.forEach((cardContainer) => {
     cardContainer.addEventListener('click', flipCard);
@@ -46,18 +45,22 @@ function ShuffleCards(cardContainer) {
     for (let i = cardContainer.length - 1; i > 0; i--) { 
         const j = Math.floor(Math.random() * (i + 1)); 
          [cardContainer[i], cardContainer[j]] = [cardContainer[j], cardContainer[i]];
+    }
 
+    const gameContainer = document.getElementById('game-container');
+    cardContainer.forEach((card) => gameContainer.appendChild(card));
+}
 
-}}
+// Shuffle the cards when the reset button is clicked
 
-// SHuffle the cards when the page loads or reset button is clicked
-navBarButton.addEventListener('click', () => {
+if (cardContainer.length > 0) {
+    ShuffleCards(cardContainer);}
+
+if (button) {
+    button.addEventListener('click', () => {
     ShuffleCards(cardContainer);
-});
-
-button.addEventListener('click', () => {
-    ShuffleCards(cardContainer);
-});
+    });
+}
 
 
 
