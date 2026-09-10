@@ -4,6 +4,9 @@ let firstCard = null;
 let secondCard = null;
 let lockBoard = false;
 
+let navBarButton = document.getElementsByClassName('game');
+let button = document.getElementById('reset-button');
+
 cardContainer.forEach((cardContainer) => {
     cardContainer.addEventListener('click', flipCard);
 
@@ -37,7 +40,9 @@ function checkForMatch(firstCard, secondCard) {
         }, 1000);
     }
 }
-function resetCards() {}
+function ShuffleCards(navBarButton, button) {
+    
+}
 
 function resetGame() {}
 
