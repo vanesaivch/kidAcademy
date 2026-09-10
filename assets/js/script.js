@@ -40,6 +40,8 @@ function checkForMatch(firstCard, secondCard) {
         }, 1000);
     }
 }
+
+//Shuffle Cards function
 function ShuffleCards(cardContainer) {
     for (let i = cardContainer.length - 1; i > 0; i--) { 
         const j = Math.floor(Math.random() * (i + 1)); 
@@ -47,6 +49,17 @@ function ShuffleCards(cardContainer) {
 
 
 }}
+
+// SHuffle the cards when the page loads or reset button is clicked
+navBarButton.addEventListener('click', () => {
+    ShuffleCards(cardContainer);
+});
+
+button.addEventListener('click', () => {
+    ShuffleCards(cardContainer);
+});
+
+
 
 function resetGame() {}
 
