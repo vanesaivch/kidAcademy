@@ -40,9 +40,13 @@ function checkForMatch(firstCard, secondCard) {
         }, 1000);
     }
 }
-function ShuffleCards(navBarButton, button) {
-    
-}
+function ShuffleCards(cardContainer) {
+    for (let i = cardContainer.length - 1; i > 0; i--) { 
+        const j = Math.floor(Math.random() * (i + 1)); 
+         [cardContainer[i], cardContainer[j]] = [cardContainer[j], cardContainer[i]];
+
+
+}}
 
 function resetGame() {}
 
