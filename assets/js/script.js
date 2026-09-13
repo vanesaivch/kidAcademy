@@ -59,12 +59,18 @@ if (cardContainer.length > 0) {
 if (button) {
     button.addEventListener('click', () => {
     ShuffleCards(cardContainer);
+    resetGame();
     });
 }
 
 
 
-function resetGame() {}
+function resetGame() {    
+    cardContainer.forEach((card) => {
+        card.classList.remove('flipped');
+        card.classList.remove('matched');
+    });
+}
 
 function checkGameComplete() {}
 
