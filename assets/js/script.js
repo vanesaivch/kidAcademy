@@ -72,5 +72,10 @@ function resetGame() {
     });
 }
 
-function checkGameComplete() {}
+function checkGameComplete() {
+    let matchedCards = document.querySelectorAll('.card-container.matched');
+    if (matchedCards.length === cardContainer.length) {
+        alert('Congratulations! You have matched all cards!');
+    }
+}
 
