@@ -31,6 +31,7 @@ function checkForMatch(firstCard, secondCard) {
     if ( firstCard.dataset.type === secondCard.dataset.type ) {
         firstCard.classList.add('matched');
         secondCard.classList.add('matched');
+        checkGameComplete();
     
     } else {
         setTimeout(() => {
@@ -38,6 +39,7 @@ function checkForMatch(firstCard, secondCard) {
             secondCard.classList.remove('flipped');
         }, 1000);
     }
+  
 }
 
 //Shuffle Cards function
@@ -73,9 +75,11 @@ function resetGame() {
 }
 
 function checkGameComplete() {
-    let matchedCards = document.querySelectorAll('.card-container.matched');
+    const matchedCards = document.querySelectorAll('.card-container.matched');
+
     if (matchedCards.length === cardContainer.length) {
-        alert('Congratulations! You have matched all cards!');
+        alert('Congratulations! You matched all the cards!');
     }
 }
+
 
