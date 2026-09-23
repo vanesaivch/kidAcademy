@@ -128,24 +128,22 @@ dotlottie-wc {
     height: auto;
    
 }
- /* How to Play and Parent Info styles */
- #how-to-play p:last-child {
-    margin-bottom: 0;
+
+/* How to play styles */
+
+#how-to-play > h2 {
+    text-align: center;
+    margin: 2rem 0;
 }
- #how-to-play {
-    background: linear-gradient(to bottom, var(--highlight-color), var(--secondary-color));
-    margin-top: 2rem;
- }
- #parent-info {
-    background: linear-gradient(to bottom, var(--secondary-color), var(--highlight-color));
- }
-    h2 {
-    text-align: center;
- }
- #how-to-play p {
-    text-align: center;
-    font-size: 1.2rem;
- }
+#instructions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+ /* Parent Info styles */
 
 #parent-info  {
     display: flex;
@@ -307,7 +305,7 @@ perspective: 1000px;
 
 /*Media queries*/
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .welcome-section {
         flex-direction: column;
         height: 400px;
@@ -328,6 +326,10 @@ perspective: 1000px;
     width: 30%;
     right: 65%;
     
+}
+#instructions {
+    flex-direction: column;
+    gap: 1rem;
 }
 /* Cards media query */
 .card-container {
