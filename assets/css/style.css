@@ -186,6 +186,11 @@ dotlottie-wc {
     right: 65%;
     top: 3%;
 }
+/* Game header styles */
+#game-header {
+    text-align: center;
+    margin: 2rem 0;
+}
 /* Game container styles */
 #game-container {
     display: flex;
