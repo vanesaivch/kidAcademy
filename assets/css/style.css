@@ -330,6 +330,9 @@ perspective: 1000px;
 #instructions {
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
 }
 /* Cards media query */
 .card-container {
