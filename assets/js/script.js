@@ -83,3 +83,9 @@ function checkGameComplete() {
 }
 
 
+// jQuery to handle the instruction button click event
+$(document).ready(function () {
+    $('.instruction-button').on('click', function () {
+        $(this).next('p').slideDown();
+    });
+});
