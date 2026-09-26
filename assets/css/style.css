@@ -152,6 +152,15 @@ background-color: var(--secondary-color);
 text-color: var(--text-color);
 box-shadow: var(--text-color) 0 15px 30px -5px;
 }
+
+.instruction-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
  /* Parent Info styles */
 
 #parent-info  {
