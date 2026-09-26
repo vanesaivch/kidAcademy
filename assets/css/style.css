@@ -143,6 +143,15 @@ dotlottie-wc {
     gap: 1rem;
     margin-bottom: 2rem;
 }
+.instruction-button {
+  min-width: 150px;
+min-height: 50px;
+width: fit-content;
+border-radius: 8px;
+background-color: var(--secondary-color);
+text-color: var(--text-color);
+box-shadow: var(--text-color) 0 15px 30px -5px;
+}
  /* Parent Info styles */
 
 #parent-info  {
