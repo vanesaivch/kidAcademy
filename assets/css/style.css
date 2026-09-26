@@ -161,6 +161,8 @@ box-shadow: var(--text-color) 0 15px 30px -5px;
     gap: 0.5rem;
 }
 
+.instruction-item p {
+ display: none; }
  /* Parent Info styles */
 
 #parent-info  {
