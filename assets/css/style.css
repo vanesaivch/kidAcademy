@@ -165,6 +165,11 @@ font-size: 120%;
 
 }
 
+#how-to-play p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
 /* for jquery  use */
 
 .instruction-item p {
