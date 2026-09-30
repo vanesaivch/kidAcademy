@@ -87,5 +87,6 @@ function checkGameComplete() {
 $(document).ready(function () {
     $('.instruction-button').on('click', function () {
         $(this).next('p').slideDown();
+        $(this).addClass('hide-button');
     });
 });

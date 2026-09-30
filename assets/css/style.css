@@ -161,8 +161,14 @@ box-shadow: var(--text-color) 0 15px 30px -5px;
     gap: 0.5rem;
 }
 
+/* for jquery  use */
+
 .instruction-item p {
  display: none; }
+
+ .hide-button {
+    display:none
+ }
  /* Parent Info styles */
 
 #parent-info  {
