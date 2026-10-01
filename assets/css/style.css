@@ -289,7 +289,7 @@ perspective: 1000px;
     transform: rotateY(180deg);
 }
 
-/*Button styles*/
+/*Buttons styles*/
 /* From Uiverse.io by cssbuttons-io */ 
 #reset-button {
   align-items: center;
@@ -337,7 +337,15 @@ perspective: 1000px;
   transform: scale(0.9);
 }
 
+/* Theme Buttons styles*/
+#theme-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
 
+}
 /*Media queries*/
 
 @media (max-width: 767px) {
@@ -390,4 +398,6 @@ perspective: 1000px;
     #game-container {
         max-width: 1000px;
     }
+    /* Theme Buttons media query */
+ 
 }
