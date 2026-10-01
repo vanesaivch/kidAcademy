@@ -88,9 +88,10 @@ function changeToAnimals() {
 
         let image = card.querySelector('.inner-card img');
 
-        let animal = card.dataset.animal;
+        let animal = card.dataset.animals;
 
-}}
+    });
+}
 
 // jQuery to handle the instruction button click event
 $(document).ready(function () {
