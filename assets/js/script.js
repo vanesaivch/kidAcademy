@@ -100,6 +100,11 @@ function changeToAnimals() {
     resetGame();
     ShuffleCards(cardContainer);
 }
+// Connect the theme button to the changeToAnimals function
+const themeButton = document.getElementById('animals');
+if (themeButton) {
+    themeButton.addEventListener('click', changeToAnimals);
+}
 
 // jQuery to handle the instruction button click event
 $(document).ready(function () {
