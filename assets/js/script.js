@@ -82,6 +82,15 @@ function checkGameComplete() {
     }
 }
 
+// Change theme of cards when the theme button is clicked
+function changeToAnimals() {
+    cardContainer.forEach((card) => {
+
+        let image = card.querySelector('.inner-card img');
+
+        let animal = card.dataset.animal;
+
+}}
 
 // jQuery to handle the instruction button click event
 $(document).ready(function () {
