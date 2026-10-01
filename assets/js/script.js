@@ -94,8 +94,11 @@ function changeToAnimals() {
 
         image.alt = animal;
 
+        card.dataset.type = animal;
 
     });
+    resetGame();
+    ShuffleCards(cardContainer);
 }
 
 // jQuery to handle the instruction button click event
