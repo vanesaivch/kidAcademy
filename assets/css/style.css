@@ -170,7 +170,8 @@ font-size: 120%;
     font-size: 1.2rem;
 }
 
-/* for jquery  use */
+/* for JS  use */
+
 
 .instruction-item p {
  display: none; }
@@ -178,6 +179,15 @@ font-size: 120%;
  .hide-button {
     display:none
  }
+
+ .animal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+
  /* Parent Info styles */
 
 #parent-info  {

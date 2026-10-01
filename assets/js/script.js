@@ -94,6 +94,8 @@ function changeToAnimals() {
 
         image.alt = animal;
 
+        $(image).addClass('animal-image');
+
         card.dataset.type = animal;
 
     });
