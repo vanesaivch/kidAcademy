@@ -88,7 +88,12 @@ function changeToAnimals() {
 
         let image = card.querySelector('.inner-card img');
 
-        let animal = card.dataset.animals;
+        let animal = card.dataset.animal;
+
+        image.src = `assets/images/${animal}.jpg`;
+
+        image.alt = animal;
+
 
     });
 }
