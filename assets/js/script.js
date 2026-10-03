@@ -90,13 +90,11 @@ function changeToAnimals() {
 
         let animal = card.dataset.animal;
 
-        image.src = `assets/images/${animal}.png`;
+        image.src = `assets/images/${animal}.jpg`;
 
         image.alt = animal;
 
         $(image).addClass('animal-image');
-
-        card.dataset.type = animal;
 
     });
     resetGame();
@@ -122,8 +120,6 @@ function changeToVehicles() {
 
         $(image).addClass('vehicle-image');
 
-        card.dataset.type = vehicle;
-
     });
     resetGame();
     ShuffleCards(cardContainer);
@@ -132,6 +128,29 @@ function changeToVehicles() {
 const vehicleThemeButton = document.getElementById('vehicles');
 if (vehicleThemeButton) {
     vehicleThemeButton.addEventListener('click', changeToVehicles);
+}
+
+// Connect the fruit button to fruit theme function
+function changeToFruits() {
+    cardContainer.forEach((card) => {
+
+        let image = card.querySelector('.inner-card img');
+
+        let fruit = card.dataset.type;
+
+        image.src = `assets/images/${fruit}.png`;
+
+        image.alt = fruit;
+
+    });
+    resetGame();
+    ShuffleCards(cardContainer);
+}
+
+// Button to change the theme to fruits
+const fruitThemeButton = document.getElementById('fruits');
+if (fruitThemeButton) {
+    fruitThemeButton.addEventListener('click', changeToFruits);
 }
 
 // jQuery to handle the instruction button click event
