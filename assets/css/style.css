@@ -356,6 +356,12 @@ perspective: 1000px;
     margin-bottom: 2rem;
 
 }
+#theme-buttons button {
+    min-width: 150px;
+    min-height: 50px;
+    border-radius: 8px;
+
+}
 /*Media queries*/
 
 @media (max-width: 767px) {
