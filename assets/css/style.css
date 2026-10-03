@@ -187,6 +187,10 @@ font-size: 120%;
     object-position: center;
 }
 
+#theme-buttons button.selected {
+    background-color: var(--secondary-color);
+}
+
 
  /* Parent Info styles */
 

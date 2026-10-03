@@ -153,10 +153,16 @@ if (fruitThemeButton) {
     fruitThemeButton.addEventListener('click', changeToFruits);
 }
 
-// jQuery to handle the instruction button click event
+// jQuery 
+// to handle the instruction button click event
 $(document).ready(function () {
     $('.instruction-button').on('click', function () {
         $(this).next('p').slideDown();
         $(this).addClass('hide-button');
     });
+});
+// to handle color of button when clicked
+$('.theme-buttons').click(function() {
+    $('.theme-buttons').removeClass('selected');
+    $(this).addClass('selected');
 });
