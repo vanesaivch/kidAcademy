@@ -360,7 +360,13 @@ perspective: 1000px;
     min-width: 150px;
     min-height: 50px;
     border-radius: 8px;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    box-shadow: var(--text-color) 0 15px 30px -5px;
+}
 
+#theme-buttons button:hover {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
 }
 /*Media queries*/
 
