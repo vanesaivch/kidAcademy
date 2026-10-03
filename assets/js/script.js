@@ -82,7 +82,7 @@ function checkGameComplete() {
     }
 }
 
-// Change theme of cards when the theme button is clicked
+// Change theme of cards when the theme button is clicked for animals
 function changeToAnimals() {
     cardContainer.forEach((card) => {
 
@@ -90,7 +90,7 @@ function changeToAnimals() {
 
         let animal = card.dataset.animal;
 
-        image.src = `assets/images/${animal}.jpg`;
+        image.src = `assets/images/${animal}.png`;
 
         image.alt = animal;
 
@@ -106,6 +106,32 @@ function changeToAnimals() {
 const themeButton = document.getElementById('animals');
 if (themeButton) {
     themeButton.addEventListener('click', changeToAnimals);
+};
+
+// Change theme of cards when the theme button is clicked for vehicles
+function changeToVehicles() {
+    cardContainer.forEach((card) => {
+
+        let image = card.querySelector('.inner-card img');
+
+        let vehicle = card.dataset.vehicle;
+
+        image.src = `assets/images/${vehicle}.png`;
+
+        image.alt = vehicle;
+
+        $(image).addClass('vehicle-image');
+
+        card.dataset.type = vehicle;
+
+    });
+    resetGame();
+    ShuffleCards(cardContainer);
+}
+// Connect the theme button to the changeToVehicles function
+const vehicleThemeButton = document.getElementById('vehicles');
+if (vehicleThemeButton) {
+    vehicleThemeButton.addEventListener('click', changeToVehicles);
 }
 
 // jQuery to handle the instruction button click event

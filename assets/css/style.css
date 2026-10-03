@@ -180,7 +180,7 @@ font-size: 120%;
     display:none
  }
 
- .animal-image {
+ .animal-image, .vehicle-image {
     width: 100%;
     height: 100%;
     object-fit: contain !important;
