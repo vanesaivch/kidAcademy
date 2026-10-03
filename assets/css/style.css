@@ -418,12 +418,16 @@ perspective: 1000px;
     .card-container {
         flex: 0 1 calc(50% - 0.5rem);
     }
+        /* Theme Buttons media query */
+    #theme-buttons {
+     flex-direction: column;
+    }
+ 
 }
 
 @media (min-width: 1024px) {
     #game-container {
         max-width: 1000px;
     }
-    /* Theme Buttons media query */
- 
+
 }
