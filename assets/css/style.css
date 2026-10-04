@@ -238,6 +238,9 @@ font-size: 120%;
     text-align: center;
     margin: 2rem 0;
 }
+#game-header p {
+    font-size: 120%;
+}
 /* Game container styles */
 #game-container {
     display: flex;
