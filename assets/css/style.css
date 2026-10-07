@@ -79,6 +79,7 @@ p {
     padding: 2rem;
     position: relative;
      overflow: hidden;
+    min-height: 70vh;
    
 }
 
@@ -429,6 +430,10 @@ perspective: 1000px;
 }
 
 @media (min-width: 1024px) {
+    .welcome-section {
+        min-height: 70vh;
+    }
+
     #game-container {
         max-width: 1000px;
     }
