@@ -60,6 +60,16 @@ main {
     gap: 2px;
 }
 
+#links a {
+    color: var(--text-color);
+    text-decoration: none;
+
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
 /*Home page styles*/
 h1, h2 {
     font-family: var(--highlight-font);
