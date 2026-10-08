@@ -167,7 +167,11 @@ dotlottie-wc {
 }
 
     /* Welcome section buttons styles */
-
+#welcome-buttons {
+    display: flex;
+    align-self: flex-start;
+    gap: 3rem;
+}
 /* How to play styles */
 
 #how-to-play > h2 {
