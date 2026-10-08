@@ -172,6 +172,17 @@ dotlottie-wc {
     align-self: flex-start;
     gap: 3rem;
 }
+#welcome-buttons button {
+    min-width: 150px;
+    min-height: 50px;
+    border-radius: 8px;
+    box-shadow: var(--text-color) 0 15px 30px -5px;
+    color: var(--text-color);
+    background-color: var(--primary-color);}
+
+#welcome-buttons button:hover {
+    background: #7dbad6;
+}
 /* How to play styles */
 
 #how-to-play > h2 {
