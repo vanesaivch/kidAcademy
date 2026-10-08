@@ -71,6 +71,7 @@ main {
 }
 
 /*Home page styles*/
+/* Welcome message, images and rotated background styles*/
 h1, h2 {
     font-family: var(--highlight-font);
     color: var(--text-color);
@@ -124,7 +125,13 @@ p {
     
 }
 
-#welcome-message::before {
+
+#welcome-copy {
+    position: relative;
+    isolation: isolate;
+}
+
+#welcome-copy::before {
     background-color: var(--accent-color);
     height: 110%;
     width: 80%;
@@ -136,6 +143,7 @@ p {
     aspect-ratio: 1 / 1;
     z-index: -1;
 }
+
 dotlottie-wc {
     position: relative;
     z-index: 2;
@@ -144,6 +152,7 @@ dotlottie-wc {
     max-width: 100%;
     flex: 0 0 auto;
 }
+
 
 #cards-image {
     flex: 1 1 50%;
@@ -156,6 +165,8 @@ dotlottie-wc {
     width: 80%;
     height: auto;
 }
+
+    /* Welcome section buttons styles */
 
 /* How to play styles */
 

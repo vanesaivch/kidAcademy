@@ -21,12 +21,10 @@
       crossorigin="anonymous"
     />
     <!-- AOS animation -->
-     <link
-  href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-  rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- CSS style sheet -->
-     
+
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -61,45 +59,57 @@
     <main>
       <section class="welcome-section">
         <div id="welcome-message">
-          <h1>Welcome, little explorer!</h1>
-          <p>Hop over to our game room and let's play!</p> 
-   
-        <dotlottie-wc
-          src="https://lottie.host/85e5e929-dd0b-4365-b00e-802bf49217a1/XHWxow5hZg.lottie"
-          autoplay
-          loop
-        >
-        </dotlottie-wc>
-        <button> Start Game </button>
-        <button> How to Play </button>
-
-      </div>
-      <div id="cards-image"> <img src="assets/images/header-card-image.png"> </div>
+          <div id="welcome-copy">
+            <h1>Welcome, little explorer!</h1>
+            <p>Hop over to our game room and let's play!</p>
+          </div>
+          <dotlottie-wc
+            src="https://lottie.host/85e5e929-dd0b-4365-b00e-802bf49217a1/XHWxow5hZg.lottie"
+            autoplay
+            loop
+          >
+          </dotlottie-wc>
+          <div id="welcome-buttons">
+            <button>Start Game</button>
+            <button>How to Play</button>
+          </div>
+        </div>
+        <div id="cards-image">
+          <img src="assets/images/header-card-image.png" />
+        </div>
       </section>
       <section id="how-to-play">
         <h2><strong>How to play</strong></h2>
-        <p> Click on each button to see the instructions!</p>
+        <p>Click on each button to see the instructions!</p>
         <div id="instructions">
           <div class="instruction-item">
             <button class="instruction-button">Flip a card</button>
             <p><strong>1.</strong> Choose two cards and turn them over.</p>
           </div>
-          <div class="instruction-item" >
+          <div class="instruction-item">
             <button class="instruction-button">Match</button>
-            <p><strong>2.</strong> If they match, they stay open! If they don't, they'll flip back automatically.</p>
-          </div>
-          <div class="instruction-item" >
-            <button class="instruction-button">Keep going</button>
-            <p><strong>3.</strong> Keep going until you've matched all the cards!</p>
+            <p>
+              <strong>2.</strong> If they match, they stay open! If they don't,
+              they'll flip back automatically.
+            </p>
           </div>
           <div class="instruction-item">
-            <button  class="instruction-button">Remember</button>
-            <p><strong>4.</strong> Pay attention to where each card is so you can remember their positions.</p>
+            <button class="instruction-button">Keep going</button>
+            <p>
+              <strong>3.</strong> Keep going until you've matched all the cards!
+            </p>
+          </div>
+          <div class="instruction-item">
+            <button class="instruction-button">Remember</button>
+            <p>
+              <strong>4.</strong> Pay attention to where each card is so you can
+              remember their positions.
+            </p>
           </div>
         </div>
       </section>
       <section id="parent-info">
-        <img src="assets/images/penguin.png" alt="penguin" id="penguin">
+        <img src="assets/images/penguin.png" alt="penguin" id="penguin" />
         <h2 data-aos="flip-up"><strong>A Note for Parents 💛</strong></h2>
         <p data-aos="flip-up">Dear Parents,</p>
         <p data-aos="flip-up">
@@ -114,14 +124,15 @@
           habits.
         </p>
 
-
         <p data-aos="flip-up">
-          <strong>Learning through play, with a little guidance from you, can make a big
-          difference. 🌟</strong>
+          <strong
+            >Learning through play, with a little guidance from you, can make a
+            big difference. 🌟</strong
+          >
         </p>
       </section>
     </main>
-     <footer>
+    <footer>
       <div id="links">
         <h3>Useful Links:</h3>
         <a
@@ -150,14 +161,18 @@
       crossorigin="anonymous"
     ></script>
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+      crossorigin="anonymous"
+    ></script>
     <!-- JS script -->
     <script src="assets/js/script.js"></script>
     <!-- AOS animation -->
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script>
-  AOS.init();
-</script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
