@@ -153,6 +153,15 @@ if (fruitThemeButton) {
     fruitThemeButton.addEventListener('click', changeToFruits);
 }
 
+// Connect the hero section buttons with game page and how to play section
+document.getElementById('start-game').addEventListener('click', function() {
+    window.location.href = 'game.html';
+});
+document.getElementById('how-to-play-button').addEventListener('click', function() {
+    document.getElementById("how-to-play").scrollIntoView({
+        behavior: "smooth"
+    });
+});
 // jQuery 
 // to handle the instruction button click event
 $(document).ready(function () {
