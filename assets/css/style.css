@@ -161,7 +161,6 @@ dotlottie-wc {
 }
 
 #cards-image img {
-    display: block;
     width: 70%;
     height: auto;
 }
@@ -244,7 +243,6 @@ font-size: 120%;
 #theme-buttons button.selected {
     background-color: var(--secondary-color);
 }
-
 
  /* Parent Info styles */
 
@@ -434,7 +432,8 @@ perspective: 1000px;
 @media (max-width: 767px) {
     .welcome-section {
         flex-direction: column;
-        height: 400px;
+        height: auto;
+        overflow: visible;
     }
     #welcome-message {
         font-size: 100%;
@@ -452,6 +451,19 @@ perspective: 1000px;
         width: 30%;
         right: 65%;
     }
+    /* Cards image moved to the top of hero section */
+    #cards-image {
+        order: -1;
+        width: 100%;
+        height: auto;
+    
+    }
+
+    #cards-image img {
+        width: 100%;
+        height: auto;
+    }
+   
     #instructions {
         flex-direction: column;
         gap: 1rem;
