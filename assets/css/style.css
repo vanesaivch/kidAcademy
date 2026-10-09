@@ -470,7 +470,7 @@ perspective: 1000px;
         align-self: center;
         justify-content: center;
     }
-   
+   /* How to Play sections styles */
     #instructions {
         flex-direction: column;
         gap: 1rem;
