@@ -433,7 +433,7 @@ perspective: 1000px;
     .welcome-section {
         flex-direction: column;
         height: auto;
-        overflow: visible;
+     
     }
     #welcome-message {
         font-size: 100%;
@@ -462,6 +462,13 @@ perspective: 1000px;
     #cards-image img {
         width: 100%;
         height: auto;
+    }
+    /* Welcome section buttons in column */
+    #welcome-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-self: center;
+        justify-content: center;
     }
    
     #instructions {
