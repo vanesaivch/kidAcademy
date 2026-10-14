@@ -230,6 +230,7 @@ font-size: 120%;
     justify-content: space-evenly;
     gap: 1rem;
     width: 100%;
+  
     
 }
 
@@ -241,12 +242,16 @@ font-size: 120%;
     justify-content: center;
     gap: 1rem;
 }
+#learning h2 {
+    text-align: center;
+    margin: 2rem 0;
+}
 
 #slide-image img{
    width: 60%;
    height: auto;
 }
-ul {
+li {
     font-family: var(--content-font);
     color: var(--text-color);
     font-size: 130%;
