@@ -235,6 +235,8 @@ font-size: 120%;
     justify-content: space-evenly;
     gap: 1rem;
     width: 100%;  
+    height: 43vh;
+    position: relative;
 }
 
 #learn-from-game, #slide-image {
@@ -255,10 +257,17 @@ font-size: 120%;
 }
 
 #slide-image img{
-   width: 80%;
+   width: 100%;
    height: auto;
    border-radius: 8px;
    box-shadow: var(--text-color) 0 15px 30px -5px;
+
+}
+
+#slide-image {
+    position: absolute;
+    right: 50%;
+    width: 30%;
 }
 li {
     font-family: var(--content-font);
