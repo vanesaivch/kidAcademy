@@ -184,6 +184,11 @@ dotlottie-wc {
 }
 /* How to play styles */
 
+#how-to-play {
+    height: 40vh;
+    width: 100%;
+}
+
 #how-to-play > h2 {
     text-align: center;
     margin: 2rem 0;
