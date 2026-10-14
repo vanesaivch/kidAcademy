@@ -229,9 +229,7 @@ font-size: 120%;
     flex-direction: row;;
     justify-content: space-evenly;
     gap: 1rem;
-    width: 100%;
-  
-    
+    width: 100%;  
 }
 
 #learn-from-game, #slide-image {
@@ -245,11 +243,17 @@ font-size: 120%;
 #learning h2 {
     text-align: center;
     margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #slide-image img{
-   width: 60%;
+   width: 80%;
    height: auto;
+   border-radius: 8px;
+   box-shadow: var(--text-color) 0 15px 30px -5px;
 }
 li {
     font-family: var(--content-font);
