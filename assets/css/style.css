@@ -229,14 +229,6 @@ font-size: 120%;
 }
 
 /* Learn from the game section styles */
-#learning-cards {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
 
 /* for JS  use */
 

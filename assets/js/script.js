@@ -153,6 +153,12 @@ if (fruitThemeButton) {
     fruitThemeButton.addEventListener('click', changeToFruits);
 }
 
+// Change color of the clicked theme button
+$('.theme-buttons').click(function() {
+    $('.theme-buttons').removeClass('selected');
+    $(this).addClass('selected');
+});
+
 // Connect the hero section buttons with game page and how to play section
 document.getElementById('start-game').addEventListener('click', function() {
     window.location.href = 'game.html';
@@ -169,9 +175,4 @@ $(document).ready(function () {
         $(this).next('p').slideDown();
         $(this).addClass('hide-button');
     });
-});
-// to handle color of button when clicked
-$('.theme-buttons').click(function() {
-    $('.theme-buttons').removeClass('selected');
-    $(this).addClass('selected');
 });
