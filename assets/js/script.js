@@ -175,4 +175,14 @@ $(document).ready(function () {
         $(this).next('p').slideDown();
         $(this).addClass('hide-button');
     });
+// to add tilt effect to the instruction button
+    $('.instruction-button').tilt({
+        scale: 1.2
+    })
+});
+
+// Tilt.js to add a tilt effect to the learning cards
+$('.learning-card').tilt({
+     glare: true,
+    maxGlare: .5
 });
