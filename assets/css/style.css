@@ -229,13 +229,32 @@ font-size: 120%;
 }
 
 /* Learn from the game section styles */
+
 #learning-cards {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
-    gap: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+
 }
+
+.learning-card {
+    flex: 0 1 250px;
+    width: 100px;
+    border-radius: 8px;
+    box-shadow: var(--text-color) 0 15px 30px -5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.learning-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
 /* for JS  use */
 
 
