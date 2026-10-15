@@ -254,6 +254,17 @@ font-size: 120%;
   object-fit: contain;
   border-radius: 8px;
 }
+/* Different background colors for each learning card */
+.learning-card:nth-child(1) {
+    background-color: #fdf0c9;
+}
+
+.learning-card:nth-child(2) {
+    background-color: #d7effd;
+}
+.learning-card:nth-child(3) {
+    background-color: #fee1ed;
+}
 
 /* for JS  use */
 
