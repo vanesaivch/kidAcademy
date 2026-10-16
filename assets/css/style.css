@@ -207,7 +207,7 @@ min-height: 50px;
 width: fit-content;
 border-radius: 8px;
 background-color: var(--secondary-color);
-text-color: var(--text-color);
+color: var(--text-color);
 box-shadow: var(--text-color) 0 15px 30px -5px;
 }
 
