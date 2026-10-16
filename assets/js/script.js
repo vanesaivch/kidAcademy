@@ -203,17 +203,34 @@ window.addEventListener('resize', resizeCanvas);
 // Drawing a rainbow with bezier curve on the canvas
 
 function drawingRainbow() {
-    ctx.beginPath();
-    ctx.moveTo(0, 0);
-    ctx.bezierCurveTo(
+ctx.beginPath();
+ctx.moveTo(0, 0);
+ctx.bezierCurveTo(
         canvas.width * 1.15, canvas.height * 0.25,
         canvas.width * 1.15, canvas.height * 0.25,
-        canvas.width / 2, canvas.height / 2
-    );
-    ctx.bezierCurveTo(
+  canvas.width / 2, canvas.height / 2
+);
+ctx.bezierCurveTo(
         -canvas.width * 0.15, canvas.height * 0.75,
         -canvas.width * 0.15, canvas.height * 0.75,
-        canvas.width, canvas.height
-    );
-    ctx.stroke();
+  canvas.width, canvas.height
+);
+ctx.stroke();
 }
+ctx.lineWidth = 30;
+
+
+// Linear Gradient onto Bazier Curve 
+const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+function linGrad () {
+    gradient.addColorStop(0, '#bdb2ff');
+    gradient.addColorStop(0.25, '#a0c4ff');
+    gradient.addColorStop(0.50, '#fdffb6');
+    gradient.addColorStop(0.75, '#ffd6a5');
+    gradient.addColorStop(1, '#ffadad');
+   ctx.strokeStyle = gradient;
+   ctx.stroke();
+   drawingRainbow();
+}
+  
+linGrad();
