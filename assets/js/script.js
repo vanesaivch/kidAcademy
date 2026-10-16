@@ -187,13 +187,33 @@ $('.learning-card').tilt({
     maxGlare: .5
 });
 
-// Resize canvas to fit the screen
+// Variables for canvas
+
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-
+// Resize canvas to fit the screen
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    drawingRainbow();
 }
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
+
+// Drawing a rainbow with bezier curve on the canvas
+
+function drawingRainbow() {
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.bezierCurveTo(
+        canvas.width * 1.15, canvas.height * 0.25,
+        canvas.width * 1.15, canvas.height * 0.25,
+        canvas.width / 2, canvas.height / 2
+    );
+    ctx.bezierCurveTo(
+        -canvas.width * 0.15, canvas.height * 0.75,
+        -canvas.width * 0.15, canvas.height * 0.75,
+        canvas.width, canvas.height
+    );
+    ctx.stroke();
+}
