@@ -230,6 +230,6 @@ function linGrad () {
     gradient.addColorStop(0.75, '#ffd6a5');
     gradient.addColorStop(1, '#ffadad');
     ctx.strokeStyle = gradient;
-    ctx.lineWidth = 30;
+    ctx.lineWidth = 40;
     drawingRainbow();
 }
