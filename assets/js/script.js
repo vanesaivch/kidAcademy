@@ -195,7 +195,7 @@ const ctx = canvas.getContext('2d');
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    drawingRainbow();
+    linGrad();
 }
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
@@ -215,22 +215,21 @@ ctx.bezierCurveTo(
         -canvas.width * 0.15, canvas.height * 0.75,
   canvas.width, canvas.height
 );
+
 ctx.stroke();
 }
-ctx.lineWidth = 30;
 
 
-// Linear Gradient onto Bazier Curve 
-const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+
+// Linear Gradient onto Bazier Curve
 function linGrad () {
+    const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
     gradient.addColorStop(0, '#bdb2ff');
     gradient.addColorStop(0.25, '#a0c4ff');
     gradient.addColorStop(0.50, '#fdffb6');
     gradient.addColorStop(0.75, '#ffd6a5');
     gradient.addColorStop(1, '#ffadad');
-   ctx.strokeStyle = gradient;
-   ctx.stroke();
-   drawingRainbow();
+    ctx.strokeStyle = gradient;
+    ctx.lineWidth = 30;
+    drawingRainbow();
 }
-  
-linGrad();
