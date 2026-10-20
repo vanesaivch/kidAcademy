@@ -187,49 +187,51 @@ $('.learning-card').tilt({
     maxGlare: .5
 });
 
-// Variables for canvas
+// // Variables for canvas
+// const canvas = document.getElementById('canvas');
+// const ctx = canvas.getContext('2d');
 
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
-// Resize canvas to fit the screen
-function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    linGrad();
-}
-resizeCanvas();
-window.addEventListener('resize', resizeCanvas);
+// // Resize canvas to fit the screen
+// function resizeCanvas() {
+//     canvas.width = window.innerWidth;
+//     canvas.height = window.innerHeight;
 
-// Drawing a rainbow with bezier curve on the canvas
+//     linGrad();
+// }
 
-function drawingRainbow() {
-ctx.beginPath();
-ctx.moveTo(0, 0);
-ctx.bezierCurveTo(
-        canvas.width * 1.15, canvas.height * 0.25,
-        canvas.width * 1.15, canvas.height * 0.25,
-  canvas.width / 2, canvas.height / 2
-);
-ctx.bezierCurveTo(
-        -canvas.width * 0.15, canvas.height * 0.75,
-        -canvas.width * 0.15, canvas.height * 0.75,
-  canvas.width, canvas.height
-);
+// resizeCanvas();
+// window.addEventListener('resize', resizeCanvas);
 
-ctx.stroke();
-}
+// // Drawing a rainbow with bezier curve on the canvas
+// function drawingRainbow() {
+//     ctx.beginPath();
+//     ctx.moveTo(0, 0);
 
+//     ctx.bezierCurveTo(
+//         canvas.width * 1.15, canvas.height * 0.25,
+//         canvas.width * 1.15, canvas.height * 0.25,
+//         canvas.width / 2, canvas.height / 2
+//     );
 
+//     ctx.bezierCurveTo(
+//         -canvas.width * 0.15, canvas.height * 0.75,
+//         -canvas.width * 0.15, canvas.height * 0.75,
+//         canvas.width, canvas.height
+//     );
+
+//     ctx.stroke();
+// }
 
 // Linear Gradient onto Bazier Curve
-function linGrad () {
-    const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-    gradient.addColorStop(0, '#bdb2ff');
-    gradient.addColorStop(0.25, '#a0c4ff');
-    gradient.addColorStop(0.50, '#fdffb6');
-    gradient.addColorStop(0.75, '#ffd6a5');
-    gradient.addColorStop(1, '#ffadad');
-    ctx.strokeStyle = gradient;
-    ctx.lineWidth = 40;
-    drawingRainbow();
-}
+// function linGrad() {
+//     const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+//     gradient.addColorStop(0, '#bdb2ff');
+//     gradient.addColorStop(0.25, '#a0c4ff');
+//     gradient.addColorStop(0.50, '#fdffb6');
+//     gradient.addColorStop(0.75, '#ffd6a5');
+//     gradient.addColorStop(1, '#ffadad');
+
+//     ctx.strokeStyle = gradient;
+//     ctx.lineWidth = 40;
+//     drawingRainbow();
+// }
