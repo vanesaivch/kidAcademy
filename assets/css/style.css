@@ -267,7 +267,18 @@ font-size: 120%;
 }
 
 #content {
-    background-image: url('../images/rainbow-background.png');
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+#content::before {
+    content: '';
+    position: absolute;
+    inset: 2rem 0 0;
+    z-index: -1;
+    background: url('../images/rainbow-background.png') center / cover no-repeat;
+
 }
 
 /* Canvas styles 
