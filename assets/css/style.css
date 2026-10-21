@@ -278,6 +278,7 @@ font-size: 120%;
     inset: 2rem 0 0;
     z-index: -1;
     background: url('../images/rainbow-background.png') center / cover no-repeat;
+    opacity: 0.7;
 
 }
 
