@@ -265,7 +265,7 @@ font-size: 120%;
 .learning-card:nth-child(3) {
     background-color: #fee1ed;
 }
-
+/* Rainbow background styles */
 #content {
     position: relative;
     isolation: isolate;
@@ -278,10 +278,18 @@ font-size: 120%;
     z-index: -1;
     background: url('../images/rainbow-background.png') center / cover no-repeat;
     pointer-events: none;
-    opacity: 0.7;
-
 }
 
+/* Content headers and paraphraphs background styles */
+#how-to-play > h2, #how-to-play > p {
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    background-color: rgba(163, 215, 138, 0.35);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    box-shadow: 0 0 30px var(--text-color);
+}
 /* Canvas styles 
 canvas {
     width: 100%;
