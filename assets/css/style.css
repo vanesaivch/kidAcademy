@@ -269,15 +269,15 @@ font-size: 120%;
 #content {
     position: relative;
     isolation: isolate;
-    overflow: hidden;
 }
 
 #content::before {
     content: '';
     position: absolute;
-    inset: 2rem 0 0;
+    inset: 0;
     z-index: -1;
     background: url('../images/rainbow-background.png') center / cover no-repeat;
+    pointer-events: none;
     opacity: 0.7;
 
 }
