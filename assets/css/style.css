@@ -265,7 +265,7 @@ font-size: 120%;
 .learning-card:nth-child(3) {
     background-color: #fee1ed;
 }
-/* Rainbow background styles */
+/* Rainbow background styles 
 #content {
     position: relative;
     isolation: isolate;
@@ -278,9 +278,9 @@ font-size: 120%;
     z-index: -1;
     background: url('../images/rainbow-background.png') center / cover no-repeat;
     pointer-events: none;
-}
+}*/
 
-/* Content headers and paraphraphs background styles */
+/* Content headers and paraphraphs background styles 
 #how-to-play > h2, #how-to-play > p {
     width: fit-content;
     margin: 2rem auto;
@@ -289,19 +289,22 @@ font-size: 120%;
     backdrop-filter: blur(15px);
     border-radius: 10px;
     box-shadow: 0 0 30px var(--text-color);
-}
-/* Canvas styles 
+}*/
+/* Canvas styles */
 canvas {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
     pointer-events: none;
+    top: 0;
+    left: 0;
 }
 #content {
     position: relative;
     z-index: 1;
-}*/
+    overflow: hidden;
+}
 /* for JS  use */
 
 

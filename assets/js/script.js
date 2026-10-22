@@ -187,51 +187,89 @@ $('.learning-card').tilt({
     maxGlare: .5
 });
 
-// // Variables for canvas
-// const canvas = document.getElementById('canvas');
-// const ctx = canvas.getContext('2d');
+// Variables fot Canvas f
+ 
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
 
-// // Resize canvas to fit the screen
-// function resizeCanvas() {
-//     canvas.width = window.innerWidth;
-//     canvas.height = window.innerHeight;
+let width, height;
+let dpr;
+let gradient;
 
-//     linGrad();
-// }
+// Resize canvas
+function resizeCanvas() {
+    dpr = window.devicePixelRatio || 1;
 
-// resizeCanvas();
-// window.addEventListener('resize', resizeCanvas);
+    width = window.innerWidth;
+    height = window.innerHeight;
 
-// // Drawing a rainbow with bezier curve on the canvas
-// function drawingRainbow() {
-//     ctx.beginPath();
-//     ctx.moveTo(0, 0);
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
 
-//     ctx.bezierCurveTo(
-//         canvas.width * 1.15, canvas.height * 0.25,
-//         canvas.width * 1.15, canvas.height * 0.25,
-//         canvas.width / 2, canvas.height / 2
-//     );
+    canvas.style.width = `${width}px`;
+    canvas.style.height = `${height}px`;
 
-//     ctx.bezierCurveTo(
-//         -canvas.width * 0.15, canvas.height * 0.75,
-//         -canvas.width * 0.15, canvas.height * 0.75,
-//         canvas.width, canvas.height
-//     );
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-//     ctx.stroke();
-// }
+    linGrad(); // Create the gradient separately
+}
 
-// Linear Gradient onto Bazier Curve
-// function linGrad() {
-//     const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-//     gradient.addColorStop(0, '#bdb2ff');
-//     gradient.addColorStop(0.25, '#a0c4ff');
-//     gradient.addColorStop(0.50, '#fdffb6');
-//     gradient.addColorStop(0.75, '#ffd6a5');
-//     gradient.addColorStop(1, '#ffadad');
+// Linear gradient
+function linGrad() {
+    gradient = ctx.createLinearGradient(0, 0, width, height);
 
-//     ctx.strokeStyle = gradient;
-//     ctx.lineWidth = 40;
-//     drawingRainbow();
-// }
+    gradient.addColorStop(0, '#bdb2ff');
+    gradient.addColorStop(0.25, '#a0c4ff');
+    gradient.addColorStop(0.50, '#fdffb6');
+    gradient.addColorStop(0.75, '#ffd6a5');
+    gradient.addColorStop(1, '#ffadad');
+}
+
+// Draw animated rainbow
+function drawingRainbow(progress) {
+    ctx.clearRect(0, 0, width, height);
+
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+
+    const wave = Math.sin(progress * Math.PI * 2);
+
+    ctx.bezierCurveTo(
+        width * 1.15,
+        height * (0.25 + 0.12 * wave),
+        width * 1.15,
+        height * (0.25 - 0.12 * wave),
+        width / 2,
+        height / 2
+    );
+
+    ctx.bezierCurveTo(
+        -width * 0.15,
+        height * (0.75 - 0.12 * wave),
+        -width * 0.15,
+        height * (0.75 + 0.12 * wave),
+        width,
+        height
+    );
+
+    ctx.strokeStyle = gradient;
+    ctx.lineWidth = 40;
+    ctx.lineCap = 'round';
+    ctx.stroke();
+}
+
+// Animation loop
+function animate(time) {
+    const cycle = (time % 4000) / 2000;
+    const progress = cycle <= 1 ? cycle : 2 - cycle;
+
+    const eased = 0.5 - 0.5 * Math.cos(progress * Math.PI);
+
+    drawingRainbow(eased);
+
+    requestAnimationFrame(animate);
+}
+
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+requestAnimationFrame(animate);
