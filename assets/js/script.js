@@ -13,7 +13,7 @@ cardContainer.forEach((cardContainer) => {
 
 function flipCard(event) {
     
-    if (lockBoard) return;
+    if (lockBoard || event.currentTarget.classList.contains('matched')) return;
        event.currentTarget.classList.toggle('flipped');
 
     if (!firstCard) {
