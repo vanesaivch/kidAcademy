@@ -414,6 +414,7 @@ object-position: center;
 /* Flipping cards styles */
 #game-container {
 perspective: 1000px;
+margin-inline: auto;
 }
 .card-container {
     transform-style: preserve-3d;
@@ -464,6 +465,8 @@ perspective: 1000px;
   white-space: nowrap;
   cursor: pointer;
   transition: all 0.3s;
+  margin-inline: auto;
+
 }
 
 #reset-button:active,
