@@ -420,6 +420,9 @@ object-position: center;
 #game-container {
 perspective: 1000px;
 margin-inline: auto;
+backdrop-filter: blur(10px);
+padding: 3rem;
+box-shadow: 0 4px 8px var(--text-color);
 }
 .card-container {
     transform-style: preserve-3d;
@@ -584,6 +587,9 @@ margin-inline: auto;
     /* Cards media query */
     .card-container {
         flex: 0 1 calc(50% - 0.5rem);
+    }
+    #game-container {
+        padding: 0;
     }
         /* Theme Buttons media query */
     #theme-buttons {
