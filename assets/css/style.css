@@ -413,7 +413,7 @@ object-position: center;
 
 /* Flipping cards styles */
 #game {
-    background: url('../images/fruits.background.png') center / cover no-repeat;
+    background: url('../images/game.background.jpg') center / cover no-repeat;
     background-size: cover;
 }
 
