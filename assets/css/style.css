@@ -354,7 +354,7 @@ canvas {
 }
 
 #parent-info::before {
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
     height: 70%;
     width: 60%;
     content: '';
