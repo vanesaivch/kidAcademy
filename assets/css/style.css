@@ -87,6 +87,10 @@ p {
     font-family: var(--content-font);
     color: var(--text-color);
 }
+
+#welcome-copy h1, #welcome-copy h2 {
+    font-size: 3rem;
+}
 .welcome-section {
     display: flex;
     flex-direction: row;
@@ -189,6 +193,10 @@ dotlottie-wc {
     background: #7dbad6;
 }
 /* How to play styles */
+
+#how-to-play h2, #how-to-play p {
+ font-size: 3rem;
+}
 
 #how-to-play {
     height: auto;
