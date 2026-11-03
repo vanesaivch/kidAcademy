@@ -70,6 +70,12 @@ main {
     text-decoration: underline;
 }
 
+#logo1 {
+    width: 100px;
+    height: auto;
+    margin-right: 1rem;
+}
+
 /*Home page styles*/
 /* Welcome message, images and rotated background styles*/
 h1, h2 {
