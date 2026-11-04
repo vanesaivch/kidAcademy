@@ -91,6 +91,18 @@ p {
 #welcome-copy h1, #welcome-copy h2 {
     font-size: 3rem;
 }
+
+#intro-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    transform: translateY(-40px);
+    
+}
 .welcome-section {
     display: flex;
     flex-direction: row;
