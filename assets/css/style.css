@@ -223,6 +223,7 @@ dotlottie-wc {
     display: flex;
     align-self: flex-start;
     gap: 3rem;
+
 }
 #welcome-buttons button {
     min-width: 150px;
@@ -512,6 +513,7 @@ box-shadow: 0 4px 8px var(--text-color);
 /*Buttons styles*/
 /* From Uiverse.io by cssbuttons-io */ 
 #reset-button {
+margin-top: 2rem;
   align-items: center;
   background-image: linear-gradient(144deg, #A3D78A, #FF937E 50%, #FF5555);
   border: 0;
