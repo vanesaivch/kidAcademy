@@ -681,12 +681,16 @@ margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  #cards-image {
-    flex: 1 1 60%;
-    transform: scale(1.2);
-  }
-  #cards-image img {
-    width: 100%;
-    height: auto;
-  }
+#welcome-message {
+  flex: 1 1 50%;
+  min-width: 0;
+}
+
+#cards-image {
+  flex: 0 0 50%;
+}
+
+#cards-image img {
+  width: 100%;
+}
 }
