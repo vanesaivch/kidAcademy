@@ -172,7 +172,7 @@ document.getElementById('how-to-play-button').addEventListener('click', function
 // to handle the instruction button click event
 $(document).ready(function () {
     $('.instruction-button').on('click', function () {
-        $(this).next('p').slideDown();
+        $(this).next('div').find('p').slideDown();
         $(this).addClass('hide-button');
     });
 // to add tilt effect to the instruction button
