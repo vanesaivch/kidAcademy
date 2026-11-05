@@ -187,7 +187,7 @@ $('.learning-card').tilt({
     maxGlare: .5
 });
 
-// Variables fot Canvas f
+// Variables for Canvas 
  
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
@@ -273,3 +273,4 @@ function animate(time) {
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
 requestAnimationFrame(animate);
+
