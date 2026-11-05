@@ -187,6 +187,18 @@ $('.learning-card').tilt({
     maxGlare: .5
 });
 
+// Vanta.js background to content in home page
+VANTA.BIRDS({
+  el: "#content",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundAlpha: 0.00
+})
 // Variables for Canvas 
  
 const canvas = document.getElementById('canvas');
