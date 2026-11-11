@@ -93,6 +93,10 @@ p {
     font-size: 3rem;
 }
 
+#welcome-copy p {
+    font-size: 170%;
+}
+
 #intro-btn {
     display: flex;
     flex-direction: row;
